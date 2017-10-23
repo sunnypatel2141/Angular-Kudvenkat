@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   template:`<div>
                 <h1>{{pageHeader}}</h1>
                 <app-employee></app-employee>
-            </div>`
+            </div>`,
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   pageHeader: String = 'Employee Details'
