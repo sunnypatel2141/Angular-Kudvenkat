@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
                 <h1>{{getFullName()}}</h1>
                 <img src='{{imagePath}}'/>
                 <app-employee></app-employee>
+                <button [disabled]='isDisabledTrue'>Click Me</button>
+                <button [disabled]='isDisabledFalse'>Can't Click Me</button>
+                <span bind-innerHtml='pageHeader'></span>
+                <div>{{badHtml}}</div>
+                <div [innerHtml]='badHtml'></div>
             </div>`,
   styleUrls: ['./app.component.css']
 })
@@ -15,6 +20,11 @@ export class AppComponent {
 
   firstName: string = 'Sunny';
   lastName: string = 'Patel';
+
+  isDisabledFalse: boolean = true;
+  isDisabledTrue: boolean = false;
+
+  badHtml: string = "string is bad <script> is not allowed but what about {{;";
 
   getFullName(): string
   {
