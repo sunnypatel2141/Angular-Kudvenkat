@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent {
+  colSpan: Number = 2;
   firstName: String = 'Sunny';
   lastName: String = 'Patel';
   gender: String = 'Male';

@@ -10,6 +10,12 @@ td
     border: 2px solid black;
 }
 
+thead
+{
+    border: 1px solid black;
+    color: green;
+}
+
 table 
 {
     color: blue;
